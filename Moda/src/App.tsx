@@ -7,26 +7,23 @@
  */
 
 import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  View,
+  ScrollView,
+  Text
+} from 'react-native';
 import styled from 'styled-components/native';
-import { ThemeProvider } from 'styled-components';
-import Theme from './Theme';
+import Weather from './Weather';
 
-interface IContainerProps {
-  theme?: ITheme;
-}
-
-const Container = styled.View`
-flex:1;
-justify-content: center;
-align-items: center;
-background-color: ${(props:IContainerProps) => props.theme && props.theme.color.black};
-`;
-
-const MainText = styled.Text`
-font-size: 30;
-text-align: center;
-margin: 10px;
+const Header = styled.Text`
 color: #000000;
+font-size: 20px;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin: 9px;
 `;
 
 interface Props {}
@@ -35,11 +32,22 @@ interface State {}
 export default class App extends React.Component<Props,State>{
   render(){
     return (
-      <ThemeProvider theme={Theme}>
-        <Container >
-          <MainText>Today's мода</MainText>
-        </Container>
-      </ThemeProvider>
+      <SafeAreaView>
+        <View style={styles.header}>
+        <Header>Today's мода</Header>
+        
+        </View>
+        <ScrollView>
+          <Weather/>
+        </ScrollView>
+      </SafeAreaView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: '#FAFAFA',
+    height: 45
+  }
+})
