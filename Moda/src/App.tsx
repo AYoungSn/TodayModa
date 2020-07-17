@@ -16,6 +16,8 @@ import {
 } from 'react-native';
 import styled from 'styled-components/native';
 import Weather from './Weather';
+import Keyword from './Keyword';
+import Shopping from './Shopping';
 
 const Header = styled.Text`
 color: #000000;
@@ -38,7 +40,15 @@ export default class App extends React.Component<Props,State>{
         
         </View>
         <ScrollView>
-          <Weather/>
+          <View style={styles.weather}>
+            <Weather/>
+          </View>
+          <View style={styles.keyword}>
+            <Keyword/>
+          </View>
+          <View style={styles.shopping}>
+          <Shopping/>
+          </View>
         </ScrollView>
       </SafeAreaView>
     );
@@ -49,5 +59,18 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#FAFAFA',
     height: 45
-  }
+  },
+  weather: {
+    
+  },
+  keyword: {
+    backgroundColor: '#FAFAFA',
+    padding: 5,
+    margin: 5,
+  },
+  shopping: {
+    backgroundColor: '#DDDDDD',
+    padding: 5,
+    margin: 5,
+  },
 })
