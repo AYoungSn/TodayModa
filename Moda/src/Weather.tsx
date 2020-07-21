@@ -1,6 +1,8 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+// https://ionicons.com/   icon 파일명 찾는곳
+
 import PropTypes from 'prop-types';
 
 const weatherCases = {
