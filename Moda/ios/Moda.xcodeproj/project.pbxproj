@@ -21,7 +21,6 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B1DFC86A2763A186BD2314F6 /* libPods-Moda-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C33D2E2080758E6152CB1D /* libPods-Moda-tvOSTests.a */; };
 		F99E2B9824C980DF0043A1FC /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99E2B9724C980DF0043A1FC /* libRNVectorIcons.a */; };
-		F99E2BBD24C99EF50043A1FC /* libYogaKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F99E2BBC24C99EF50043A1FC /* libYogaKit.a */; };
 		F9ACD90924C9A17E0051F69E /* libYoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9ACD90824C9A17E0051F69E /* libYoga.a */; };
 /* End PBXBuildFile section */
 
@@ -106,7 +105,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9ACD90924C9A17E0051F69E /* libYoga.a in Frameworks */,
-				F99E2BBD24C99EF50043A1FC /* libYogaKit.a in Frameworks */,
 				F99E2B9824C980DF0043A1FC /* libRNVectorIcons.a in Frameworks */,
 				5A4C10D49E7A6146748E4C0D /* libPods-Moda.a in Frameworks */,
 			);
