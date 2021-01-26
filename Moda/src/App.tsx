@@ -23,11 +23,11 @@ import Keyword from 'Keyword';
 import Shopping from 'Shopping';
 import Geolocation from '@react-native-community/geolocation';
 
-const API_KEY = "b86c474546c60f7c146da98180738950";
+const API_KEY = "{API_KEY}";
 
 // shopping api key
-const NAVER_API_KEY = "5JU7NeFVoI4HmS9ZzWnX";
-const NAVER_API_SECRET = "Fpj6gmUYjD";
+const NAVER_API_KEY = "";
+const NAVER_API_SECRET = "";
 
 const numColumns = 4;
 
